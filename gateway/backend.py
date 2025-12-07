@@ -17,7 +17,7 @@ from gateway.chatgpt import chatgpt_html
 from gateway.reverseProxy import chatgpt_reverse_proxy, content_generator, get_real_req_token, headers_reject_list
 from utils.Client import Client
 from utils.Logger import logger
-from utils.configs import x_sign, turnstile_solver_url, chatgpt_base_url_list, no_sentinel
+from utils.config import x_sign, turnstile_solver_url, chatgpt_base_url_list, no_sentinel
 
 banned_paths = [
     "backend-api/accounts/logout_all",
