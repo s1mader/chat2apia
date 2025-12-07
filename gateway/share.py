@@ -13,7 +13,7 @@ from chatgpt.authorization import get_fp, verify_token
 from gateway.reverseProxy import get_real_req_token
 from utils.Client import Client
 from utils.Logger import logger
-from utils.configs import proxy_url_list, chatgpt_base_url_list, authorization_list
+from utils.config import proxy_url_list, chatgpt_base_url_list, authorization_list
 
 base_headers = {
     'accept': '*/*',

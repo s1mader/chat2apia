@@ -6,7 +6,7 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.templating import Jinja2Templates
 
-from utils.configs import enable_gateway, api_prefix
+from utils.config import enable_gateway, api_prefix
 
 warnings.filterwarnings("ignore")
 

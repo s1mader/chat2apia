@@ -8,7 +8,7 @@ from ua_generator.options import Options
 from ua_generator.data.version import VersionRange
 from fastapi import HTTPException
 
-import utils.configs as configs
+import utils.config as configs
 import utils.globals as globals
 from chatgpt.refreshToken import rt2ac
 from utils.Logger import logger
