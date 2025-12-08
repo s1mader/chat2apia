@@ -84,7 +84,7 @@ async def upload_html(request: Request):
 
 
 @app.post(f"/{api_prefix}/tokens/upload" if api_prefix else "/tokens/upload")
-async def upload_post(text: str = Form(...)):
+async def upload_tokens(text: str = Form(...)):
     lines = text.split("\n")
     for line in lines:
         if line.strip() and not line.startswith("#"):
@@ -97,7 +97,7 @@ async def upload_post(text: str = Form(...)):
 
 
 @app.post(f"/{api_prefix}/tokens/clear" if api_prefix else "/tokens/clear")
-async def upload_post():
+async def clear_tokens():
     globals.token_list.clear()
     globals.error_token_list.clear()
     with open(globals.TOKENS_FILE, "w", encoding="utf-8") as f:
